@@ -1,18 +1,17 @@
 {
-  "totalPlaces": 24,
-  "totalTrails": 6,
+  "totalPlaces": 15153,
+  "totalTrails": 111,
   "byType": {
-    "heritage": 8,
-    "lodging": 3,
-    "viewpoint": 3,
-    "attraction": 2,
-    "park": 2,
-    "restaurant": 2,
-    "cafe": 1,
-    "homestay": 1,
-    "street_food": 1,
-    "trailhead": 1
+    "attraction": 1205,
+    "lodging": 3261,
+    "heritage": 4655,
+    "viewpoint": 147,
+    "cafe": 858,
+    "street_food": 620,
+    "restaurant": 3768,
+    "park": 636,
+    "trailhead": 3
   },
-  "avgRating": 4.57,
-  "generatedAt": "2026-10-06T00:00:00.000Z"
+  "avgRating": null,
+  "generatedAt": "2026-10-07T07:23:10.568094+00:00"
 }

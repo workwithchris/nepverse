@@ -1,0 +1,12 @@
+.git
+node_modules
+dist
+**/dist
+.nx
+**/.venv
+**/__pycache__
+**/.pytest_cache
+**/.ruff_cache
+apps/scraper/raw
+**/*.egg-info
+*.log

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from nvs.core.dedupe import dedupe, haversine_m
+from nvs.core.dedupe import dedupe, duplicate_rate, haversine_m
 from nvs.core.models import Place, PlaceType
 
 
@@ -112,3 +112,27 @@ def test_three_way_cluster_merges_to_one() -> None:
     merged = dedupe(places, radius_m=75, threshold=88)
     assert len(merged) == 1
     assert len(merged[0].source_ids) == 3
+
+
+def test_pair_merges_across_grid_cell_boundary() -> None:
+    # Grid cell ~0.0006737 deg; these straddle a boundary at ~0.0013474.
+    a = _place("nv_a", "Hotel ABC", 0.00130, 0.0, "osm")
+    b = _place("nv_b", "ABC Hotel", 0.00140, 0.0, "wikivoyage")
+    assert haversine_m(a.lat, a.lng, b.lat, b.lng) < 75
+    merged = dedupe([a, b], radius_m=75, threshold=88)
+    assert len(merged) == 1
+
+
+def test_large_input_completes_without_quadratic_blowup() -> None:
+    places = [
+        _place(f"nv_{i}", f"Unique Place {i}", 27.70 + (i % 50) * 0.0001, 85.30 + (i // 50) * 0.0001, "osm")
+        for i in range(3000)
+    ]
+    merged = dedupe(places, radius_m=75, threshold=95)
+    assert 0 < len(merged) <= len(places)
+
+
+def test_duplicate_rate() -> None:
+    assert duplicate_rate(0, 0) == 0.0
+    assert duplicate_rate(100, 95) == 0.05
+    assert duplicate_rate(100, 100) == 0.0

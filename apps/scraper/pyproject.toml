@@ -13,6 +13,12 @@ dependencies = [
     "polars>=1.0",
     "PyYAML>=6.0",
     "indic-transliteration>=2.3",
+    "pyrosm>=0.15",
+    "osmium>=4",
+    "psycopg[binary]>=3.2",
+    "sqlalchemy>=2",
+    "geoalchemy2>=0.15",
+    "pgvector>=0.3",
 ]
 
 # M2/M3 scope (kept out for fast installs):

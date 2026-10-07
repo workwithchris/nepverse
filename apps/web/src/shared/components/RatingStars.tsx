@@ -33,7 +33,7 @@ export function RatingStars({ rating, count, className }: RatingStarsProps) {
             className={cn(
               'h-3.5 w-3.5',
               position <= rounded
-                ? 'fill-amber-500 text-amber-500'
+                ? 'fill-eat text-eat'
                 : 'fill-muted text-muted-foreground/40',
             )}
           />

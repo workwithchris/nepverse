@@ -1,56 +1,69 @@
 import { Link } from 'react-router-dom';
-import { CalendarDays, Footprints, Mountain } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import type { Trail } from '@/core/api/types';
-import { Badge } from '@/shared/ui/badge';
-import { Card, CardContent, CardHeader, CardTitle } from '@/shared/ui/card';
 import { DifficultyBadge } from './DifficultyBadge';
 import { TrailSparkline } from './TrailSparkline';
 
 export function TrailCard({ trail }: { trail: Trail }) {
   return (
-    <Card className="h-full gap-4 transition-colors hover:border-foreground/20">
-      <CardHeader className="gap-3">
-        <div className="flex flex-wrap items-center gap-2">
+    <article className="group relative flex h-full flex-col rounded-2xl border bg-card p-3 transition-all hover:-translate-y-0.5 hover:border-[#205d43]/50 hover:shadow-lg focus-within:ring-2 focus-within:ring-[#205d43] focus-within:ring-offset-2">
+      <TrailSparkline geometry={trail.geometry} label={trail.name} />
+      <div className="flex flex-1 flex-col px-2 pt-4 pb-2">
+        <div className="flex flex-wrap items-center justify-between gap-2">
           <DifficultyBadge difficulty={trail.difficulty} />
-          <Badge variant="secondary">{trail.bestSeason}</Badge>
-          {trail.permitRequired ? (
-            <Badge variant="outline">Permit required</Badge>
-          ) : (
-            <Badge variant="outline">No permit</Badge>
-          )}
+          <span className="font-mono text-[10px] text-muted-foreground">
+            {trail.bestSeason}
+          </span>
         </div>
-        <CardTitle className="text-base leading-snug">
-          <Link to={`/trails/${trail.id}`} className="hover:underline">
+        <h3 className="mt-3 text-lg leading-snug font-semibold tracking-tight text-balance">
+          <Link
+            to={`/trails/${trail.id}`}
+            className="after:absolute after:inset-0 group-hover:underline group-hover:underline-offset-4"
+          >
             {trail.name}
           </Link>
-        </CardTitle>
-      </CardHeader>
-      <CardContent className="flex flex-col gap-4">
-        <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-muted-foreground tabular-nums">
-          <span className="inline-flex items-center gap-1.5">
-            <Footprints className="h-4 w-4" />
-            {trail.distanceKm} km
-          </span>
-          {trail.elevationGainM ? (
-            <span className="inline-flex items-center gap-1.5">
-              <Mountain className="h-4 w-4" />
-              {trail.elevationGainM.toLocaleString()} m
-            </span>
-          ) : null}
-          {trail.days ? (
-            <span className="inline-flex items-center gap-1.5">
-              <CalendarDays className="h-4 w-4" />
-              {trail.days} days
-            </span>
-          ) : null}
-        </div>
+        </h3>
         {trail.description ? (
-          <p className="line-clamp-2 text-sm text-muted-foreground">
+          <p className="mt-2 line-clamp-2 text-sm leading-5 text-muted-foreground">
             {trail.description}
           </p>
         ) : null}
-        <TrailSparkline geometry={trail.geometry} label={trail.name} />
-      </CardContent>
-    </Card>
+        <div className="mt-auto grid grid-cols-2 gap-4 border-t pt-4">
+          <div>
+            <p className="font-mono text-[10px] tracking-wider text-muted-foreground uppercase">
+              Distance
+            </p>
+            <p className="mt-0.5 text-xl font-semibold tabular-nums">
+              {trail.distanceKm}{' '}
+              <span className="text-xs font-normal text-muted-foreground">
+                km
+              </span>
+            </p>
+          </div>
+          <div>
+            <p className="font-mono text-[10px] tracking-wider text-muted-foreground uppercase">
+              Estimated time
+            </p>
+            <p className="mt-0.5 text-xl font-semibold tabular-nums">
+              {trail.days ?? '—'}{' '}
+              <span className="text-xs font-normal text-muted-foreground">
+                days
+              </span>
+            </p>
+          </div>
+        </div>
+        <div className="mt-4 flex items-center justify-between gap-3 border-t pt-3 text-xs">
+          <span className="text-muted-foreground">
+            {trail.permitRequired ? 'Permit flagged' : 'Verify permits'}
+            {trail.elevationGainM
+              ? ` · ${trail.elevationGainM.toLocaleString()} m gain`
+              : ''}
+          </span>
+          <span className="inline-flex shrink-0 items-center gap-1 font-medium text-[#205d43] dark:text-[#a9d9c4]">
+            Explore <ArrowUpRight className="size-3.5" />
+          </span>
+        </div>
+      </div>
+    </article>
   );
 }

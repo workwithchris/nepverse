@@ -4,7 +4,8 @@ from nvs.config import Settings, load_settings
 from nvs.core.models import Place, SourceRecord, Trail
 from nvs.pipeline.extract import read_all_records, write_batch
 from nvs.pipeline.normalize import normalize_records
-from nvs.pipeline.resolve import resolve
+from nvs.pipeline.resolve import resolve, resolve_trails
+from nvs.pipeline.trails import build_trails
 
 
 class RawRepository:
@@ -20,10 +21,15 @@ class RawRepository:
         return read_all_records(self.settings)
 
     def places(self) -> list[Place]:
-        return resolve(normalize_records(self.records()))
+        place_records = [
+            r
+            for r in self.records()
+            if "geometry" not in r.payload and r.source not in {"elevation", "commons"}
+        ]
+        return resolve(normalize_records(place_records))
 
     def trails(self) -> list[Trail]:
-        return []
+        return resolve_trails(build_trails(self.records()))
 
 
 _repository: RawRepository | None = None

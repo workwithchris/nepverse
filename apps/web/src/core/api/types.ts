@@ -36,6 +36,12 @@ export interface Place {
   description?: string | null;
   tags: string[];
   wikidataId?: string | null;
+  imageUrl?: string | null;
+  imagePageUrl?: string | null;
+  imageLicense?: string | null;
+  imageLicenseUrl?: string | null;
+  imageAuthor?: string | null;
+  imageAttribution?: string | null;
   status: PlaceStatus;
   sources: SourceRef[];
 }

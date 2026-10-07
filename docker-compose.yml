@@ -1,0 +1,42 @@
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_USER: nepalverse
+      POSTGRES_PASSWORD: nepalverse
+      POSTGRES_DB: nepalverse
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U nepalverse -d nepalverse"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  scraper:
+    build: ./apps/scraper
+    environment:
+      DATABASE_URL: postgresql+psycopg://nepalverse:nepalverse@db:5432/nepalverse
+    volumes:
+      - ./apps/scraper/raw:/app/raw
+      - ./apps/web/public/data:/web/public/data
+    depends_on:
+      db:
+        condition: service_healthy
+    command: ["--help"]
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    ports:
+      - "8080:80"
+    volumes:
+      - ./apps/web/public/data:/usr/share/nginx/html/data
+    depends_on:
+      - scraper
+
+volumes:
+  pgdata:

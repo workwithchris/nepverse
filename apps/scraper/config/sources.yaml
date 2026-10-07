@@ -15,8 +15,17 @@ sources:
     rate_limit_rps: 0.5
     trust: 80
     endpoints:
-      geofabrik: "https://download.geofabrik.de/asia/nepal/nepal-latest.osm.pbf"
-      overpass: "https://overpass-api.de/api/interpreter"
+      geofabrik: "https://download.geofabrik.de/asia/nepal-latest.osm.pbf"
+      overpass: "https://overpass.private.coffee/api/interpreter"
+
+  trails:
+    enabled: true
+    license: "ODbL-1.0"
+    attribution: "© OpenStreetMap contributors"
+    rate_limit_rps: 0.2
+    trust: 80
+    endpoints:
+      geofabrik: "https://download.geofabrik.de/asia/nepal-latest.osm.pbf"
 
   hotosm:
     enabled: true
@@ -54,6 +63,15 @@ sources:
     trust: 60
     endpoints:
       api: "https://commons.wikimedia.org/w/api.php"
+
+  elevation:
+    enabled: true
+    license: "SRTM (public domain, NASA/USGS via OpenTopoData)"
+    attribution: "Elevation: SRTM / OpenTopoData"
+    rate_limit_rps: 1.0
+    trust: 70
+    endpoints:
+      api: "https://api.opentopodata.org/v1/srtm90m"
 
   google_places:
     enabled: false

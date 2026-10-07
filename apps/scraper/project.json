@@ -3,12 +3,14 @@
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/scraper/src",
   "projectType": "application",
-  "tags": ["type:python"],
+  "tags": [
+    "type:python"
+  ],
   "targets": {
     "run": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "uv run --project apps/scraper nvs",
+        "command": "uv run --project apps/scraper nvs run",
         "forwardAllArgs": true
       }
     },
@@ -28,6 +30,13 @@
       "executor": "nx:run-commands",
       "options": {
         "command": "uv run --project apps/scraper nvs export",
+        "forwardAllArgs": true
+      }
+    },
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "uv run --project apps/scraper nvs serve",
         "forwardAllArgs": true
       }
     }

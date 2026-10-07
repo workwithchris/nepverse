@@ -19,6 +19,9 @@ function renderRoute(initialEntry: string) {
 }
 
 describe('app shell', () => {
+  beforeEach(() => vi.stubGlobal('scrollTo', vi.fn()));
+  afterEach(() => vi.unstubAllGlobals());
+
   it('renders the branding and the main navigation', () => {
     renderRoute('/places');
 
@@ -41,8 +44,12 @@ describe('app shell', () => {
   it('renders the dashboard overview on the index route', () => {
     renderRoute('/');
 
-    expect(screen.getByRole('heading', { name: 'Overview' })).toBeTruthy();
+    expect(
+      screen.getByRole('heading', { name: 'Nepal, place by place' }),
+    ).toBeTruthy();
     expect(screen.getByText('Total places')).toBeTruthy();
-    expect(screen.getByText('Category breakdown')).toBeTruthy();
+    expect(
+      screen.getByRole('complementary', { name: 'Category breakdown' }),
+    ).toBeTruthy();
   });
 });

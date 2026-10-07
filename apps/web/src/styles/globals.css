@@ -3,6 +3,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Geist-style tokens */
 :root {
   --radius: 0.5rem;
   --background: #fafafa;
@@ -11,19 +12,25 @@
   --card-foreground: #171717;
   --popover: #ffffff;
   --popover-foreground: #171717;
-  --primary: #0070f3;
+  --primary: #171717;
   --primary-foreground: #ffffff;
   --secondary: #f2f2f2;
   --secondary-foreground: #171717;
-  --muted: #f4f4f5;
+  --muted: #f5f5f5;
   --muted-foreground: #666666;
-  --accent: #ebebeb;
+  --accent: #ededed;
   --accent-foreground: #171717;
-  --destructive: #dc2626;
+  --destructive: #e5484d;
   --destructive-foreground: #ffffff;
-  --border: #e5e5e5;
-  --input: #e5e5e5;
+  --border: #ebebeb;
+  --input: #e0e0e0;
   --ring: #0070f3;
+
+  /* category groups: map dots, bars, row markers */
+  --culture: #e5484d;
+  --nature: #45a557;
+  --stay: #0070f3;
+  --eat: #f5a623;
 }
 
 .dark {
@@ -33,23 +40,29 @@
   --card-foreground: #ededed;
   --popover: #111111;
   --popover-foreground: #ededed;
-  --primary: #ffffff;
+  --primary: #ededed;
   --primary-foreground: #000000;
   --secondary: #1a1a1a;
   --secondary-foreground: #ededed;
-  --muted: #1a1a1a;
+  --muted: #141414;
   --muted-foreground: #a1a1a1;
   --accent: #1f1f1f;
   --accent-foreground: #ededed;
-  --destructive: #dc2626;
-  --destructive-foreground: #ffffff;
-  --border: #2e2e2e;
+  --destructive: #ff6166;
+  --destructive-foreground: #000000;
+  --border: #242424;
   --input: #2e2e2e;
-  --ring: #ffffff;
+  --ring: #52a8ff;
+
+  --culture: #ff6166;
+  --nature: #62c073;
+  --stay: #52a8ff;
+  --eat: #ffb224;
 }
 
 @theme inline {
   --font-sans: 'Geist Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-deva: 'Noto Sans Devanagari', sans-serif;
   --font-mono: 'Geist Mono Variable', ui-monospace, SFMono-Regular, monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -70,10 +83,14 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
+  --color-culture: var(--culture);
+  --color-nature: var(--nature);
+  --color-stay: var(--stay);
+  --color-eat: var(--eat);
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: calc(var(--radius) - 1px);
   --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
+  --radius-xl: calc(var(--radius) + 2px);
 }
 
 @layer base {
@@ -87,5 +104,26 @@
 
   body {
     @apply bg-background font-sans text-foreground;
+  }
+
+  :lang(ne),
+  .font-deva {
+    font-family: var(--font-deva);
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-ring;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .rise {
+    animation: rise 300ms ease-out both;
+  }
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(4px);
+    }
   }
 }

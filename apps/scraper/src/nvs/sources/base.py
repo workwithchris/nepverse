@@ -2,12 +2,13 @@ from __future__ import annotations
 
 import time
 from collections.abc import Iterator
+from pathlib import Path
 from typing import Any, Protocol
 
 import httpx
 from tenacity import (
     retry,
-    retry_if_exception_type,
+    retry_if_exception,
     stop_after_attempt,
     wait_exponential,
 )
@@ -16,6 +17,22 @@ from nvs.config import Settings, load_settings
 from nvs.core.models import SourceRecord
 
 DEFAULT_USER_AGENT = "NepalVerseScraper/0.1 (+https://nepalverse.example; contact@example.com)"
+
+
+def _retryable(exc: BaseException) -> bool:
+    if isinstance(exc, httpx.TransportError):
+        return True
+    if isinstance(exc, httpx.HTTPStatusError):
+        return 500 <= exc.response.status_code < 600
+    return False
+
+
+_RETRY = dict(
+    retry=retry_if_exception(_retryable),
+    stop=stop_after_attempt(5),
+    wait=wait_exponential(multiplier=1, min=1, max=30),
+    reraise=True,
+)
 
 
 class PoliteClient:
@@ -43,12 +60,7 @@ class PoliteClient:
                 time.sleep(wait_for)
         self._last_hit[domain] = time.monotonic()
 
-    @retry(
-        retry=retry_if_exception_type((httpx.TransportError, httpx.TimeoutException)),
-        stop=stop_after_attempt(4),
-        wait=wait_exponential(multiplier=1, min=1, max=20),
-        reraise=True,
-    )
+    @retry(**_RETRY)
     def get(self, url: str, *, params: dict[str, Any] | None = None) -> httpx.Response:
         domain = httpx.URL(url).host or ""
         self._throttle(domain)
@@ -56,18 +68,31 @@ class PoliteClient:
         response.raise_for_status()
         return response
 
-    @retry(
-        retry=retry_if_exception_type((httpx.TransportError, httpx.TimeoutException)),
-        stop=stop_after_attempt(4),
-        wait=wait_exponential(multiplier=1, min=1, max=20),
-        reraise=True,
-    )
-    def post(self, url: str, *, data: dict[str, Any] | None = None) -> httpx.Response:
+    @retry(**_RETRY)
+    def post(
+        self, url: str, *, data: dict[str, Any] | None = None, timeout: float | None = None
+    ) -> httpx.Response:
         domain = httpx.URL(url).host or ""
         self._throttle(domain)
-        response = self._client.post(url, data=data)
+        response = self._client.post(url, data=data, timeout=timeout or self.settings.timeout_s)
         response.raise_for_status()
         return response
+
+    @retry(**_RETRY)
+    def download(self, url: str, dest: Path) -> Path:
+        """Stream a (possibly large) file to ``dest`` atomically."""
+        domain = httpx.URL(url).host or ""
+        self._throttle(domain)
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        tmp = dest.with_name(dest.name + ".part")
+        timeout = httpx.Timeout(self.settings.timeout_s, read=300.0)
+        with self._client.stream("GET", url, timeout=timeout, follow_redirects=True) as response:
+            response.raise_for_status()
+            with tmp.open("wb") as handle:
+                for chunk in response.iter_bytes(1 << 20):
+                    handle.write(chunk)
+        tmp.replace(dest)
+        return dest
 
     def close(self) -> None:
         self._client.close()
