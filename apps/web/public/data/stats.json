@@ -1,0 +1,18 @@
+{
+  "totalPlaces": 24,
+  "totalTrails": 6,
+  "byType": {
+    "heritage": 8,
+    "lodging": 3,
+    "viewpoint": 3,
+    "attraction": 2,
+    "park": 2,
+    "restaurant": 2,
+    "cafe": 1,
+    "homestay": 1,
+    "street_food": 1,
+    "trailhead": 1
+  },
+  "avgRating": 4.57,
+  "generatedAt": "2026-10-06T00:00:00.000Z"
+}

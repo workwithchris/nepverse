@@ -1,0 +1,35 @@
+{
+  "name": "scraper",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/scraper/src",
+  "projectType": "application",
+  "tags": ["type:python"],
+  "targets": {
+    "run": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "uv run --project apps/scraper nvs",
+        "forwardAllArgs": true
+      }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "uv run --project apps/scraper pytest -q apps/scraper/tests"
+      }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "uv run --project apps/scraper ruff check apps/scraper/src apps/scraper/tests"
+      }
+    },
+    "export": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "uv run --project apps/scraper nvs export",
+        "forwardAllArgs": true
+      }
+    }
+  }
+}

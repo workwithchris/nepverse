@@ -1,0 +1,697 @@
+{
+  "items": [
+    {
+      "id": "pashupatinath-temple",
+      "nameEn": "Pashupatinath Temple",
+      "nameNe": "पशुपतिनाथ मन्दिर",
+      "placeType": "heritage",
+      "lat": 27.7106,
+      "lng": 85.3487,
+      "address": "Pashupati Road, Kathmandu 44600, Nepal",
+      "openingHours": "04:00-19:00 daily",
+      "priceLevel": 2,
+      "rating": 4.8,
+      "reviewCount": 12450,
+      "description": "The most sacred Hindu temple in Nepal, dedicated to Lord Shiva and set on the banks of the Bagmati River. The complex includes cremation ghats, shrines and monkeys, and draws pilgrims from across the subcontinent.",
+      "tags": ["hindu", "temple", "sacred", "unesco"],
+      "wikidataId": "Q1367144",
+      "status": "open",
+      "sources": [
+        {
+          "source": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/search?query=Pashupatinath%20Temple%20Kathmandu",
+          "license": "ODbL",
+          "attribution": "(c) OpenStreetMap contributors"
+        },
+        {
+          "source": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Pashupatinath_Temple",
+          "license": "CC BY-SA 4.0",
+          "attribution": "Wikipedia contributors"
+        }
+      ]
+    },
+    {
+      "id": "boudhanath-stupa",
+      "nameEn": "Boudhanath Stupa",
+      "nameNe": "बौद्धनाथ स्तूप",
+      "placeType": "heritage",
+      "lat": 27.7215,
+      "lng": 85.362,
+      "address": "Boudha, Kathmandu 44600, Nepal",
+      "openingHours": "06:00-18:00 daily",
+      "priceLevel": 1,
+      "rating": 4.8,
+      "reviewCount": 9320,
+      "description": "One of the largest spherical stupas in the world and the spiritual heart of Tibetan Buddhism in Nepal. Pilgrims circle the dome clockwise while prayer wheels spin and butter lamps burn.",
+      "tags": ["buddhist", "stupa", "unesco", "pilgrimage"],
+      "wikidataId": "Q181197",
+      "status": "open",
+      "sources": [
+        {
+          "source": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/search?query=Boudhanath%20Stupa",
+          "license": "ODbL",
+          "attribution": "(c) OpenStreetMap contributors"
+        },
+        {
+          "source": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Boudhanath",
+          "license": "CC BY-SA 4.0",
+          "attribution": "Wikipedia contributors"
+        }
+      ]
+    },
+    {
+      "id": "swayambhunath-stupa",
+      "nameEn": "Swayambhunath (Monkey Temple)",
+      "nameNe": "स्वयम्भूनाथ",
+      "placeType": "heritage",
+      "lat": 27.7149,
+      "lng": 85.2904,
+      "address": "Swayambhu, Kathmandu 44600, Nepal",
+      "openingHours": "06:00-18:00 daily",
+      "priceLevel": 1,
+      "rating": 4.7,
+      "reviewCount": 8810,
+      "description": "An ancient hilltop stupa crowned by a painted Buddha eyes, reached by a long staircase or a short drive. The site mixes Buddhist shrines, Hindu temples and resident monkeys above the Kathmandu Valley.",
+      "tags": ["buddhist", "stupa", "unesco", "viewpoint"],
+      "wikidataId": "Q189483",
+      "status": "open",
+      "sources": [
+        {
+          "source": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/search?query=Swayambhunath",
+          "license": "ODbL",
+          "attribution": "(c) OpenStreetMap contributors"
+        },
+        {
+          "source": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Swayambhunath",
+          "license": "CC BY-SA 4.0",
+          "attribution": "Wikipedia contributors"
+        }
+      ]
+    },
+    {
+      "id": "kathmandu-durbar-square",
+      "nameEn": "Kathmandu Durbar Square",
+      "nameNe": "काठमाडौं दरबार स्क्वायर",
+      "placeType": "heritage",
+      "lat": 27.7043,
+      "lng": 85.3076,
+      "address": "Basantapur, Kathmandu 44600, Nepal",
+      "openingHours": "07:00-19:00 daily",
+      "priceLevel": 1,
+      "rating": 4.5,
+      "reviewCount": 6120,
+      "description": "The old royal palace square of the Malla kings, packed with tiered pagodas, courtyards and the Kumari Ghar. Several structures were damaged in the 2015 earthquake and restoration continues.",
+      "tags": ["palace", "museum", "unesco", "newari"],
+      "wikidataId": "Q207930",
+      "status": "open",
+      "sources": [
+        {
+          "source": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/search?query=Kathmandu%20Durbar%20Square",
+          "license": "ODbL",
+          "attribution": "(c) OpenStreetMap contributors"
+        },
+        {
+          "source": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Kathmandu_Durbar_Square",
+          "license": "CC BY-SA 4.0",
+          "attribution": "Wikipedia contributors"
+        }
+      ]
+    },
+    {
+      "id": "lumbini-maya-devi-temple",
+      "nameEn": "Lumbini (Maya Devi Temple)",
+      "nameNe": "लुम्बिनी",
+      "placeType": "heritage",
+      "lat": 27.469,
+      "lng": 83.2757,
+      "address": "Lumbini, Lumbini Province, Nepal",
+      "openingHours": "06:00-18:00 daily",
+      "priceLevel": 2,
+      "rating": 4.6,
+      "reviewCount": 3940,
+      "description": "The birthplace of Siddhartha Gautama and a UNESCO World Heritage pilgrimage site. The sacred garden holds the Maya Devi Temple, the marker stone and ashoka's pillar beside monasteries built by many nations.",
+      "tags": ["buddhist", "birthplace", "unesco", "pilgrimage"],
+      "wikidataId": "Q41295",
+      "status": "open",
+      "sources": [
+        {
+          "source": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/search?query=Lumbini%20Nepal",
+          "license": "ODbL",
+          "attribution": "(c) OpenStreetMap contributors"
+        },
+        {
+          "source": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Lumbini",
+          "license": "CC BY-SA 4.0",
+          "attribution": "Wikipedia contributors"
+        }
+      ]
+    },
+    {
+      "id": "tansen-bazaar",
+      "nameEn": "Tansen Bazaar",
+      "nameNe": "तानसेन",
+      "placeType": "heritage",
+      "lat": 27.8667,
+      "lng": 83.55,
+      "address": "Tansen, Palpa, Lumbini Province, Nepal",
+      "openingHours": "07:00-18:00 daily",
+      "priceLevel": 1,
+      "rating": 4.4,
+      "reviewCount": 720,
+      "description": "A living Newari hill town with cobbled bazaar streets, brick courtyards and the old Ranighat palace. Tansen sits on a ridge with wide views over the Terai plains and is a quiet stop on Palpa routes.",
+      "tags": ["newari", "hill town", "bazaar", "architecture"],
+      "status": "open",
+      "sources": [
+        {
+          "source": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/search?query=Tansen%20Palpa%20Nepal",
+          "license": "ODbL",
+          "attribution": "(c) OpenStreetMap contributors"
+        },
+        {
+          "source": "Wikipedia",
+          "url": "https://en.wikipedia.org/w/index.php?search=Tansen+Palpa+Nepal",
+          "license": "CC BY-SA 4.0",
+          "attribution": "Wikipedia contributors"
+        }
+      ]
+    },
+    {
+      "id": "world-peace-pagoda",
+      "nameEn": "World Peace Pagoda",
+      "nameNe": "शान्ति स्तूप",
+      "placeType": "heritage",
+      "lat": 28.218,
+      "lng": 83.9609,
+      "address": "Awdhuly Marg, Pokhara 33700, Nepal",
+      "openingHours": "05:00-18:00 daily",
+      "priceLevel": 1,
+      "rating": 4.6,
+      "reviewCount": 5210,
+      "description": "A brilliant white stupa on a hill above Phewa Lake, built by Japanese monks as a monument to non-violence. The short hike up through forest ends with panoramas of Annapurna and Machhapuchhre.",
+      "tags": ["buddhist", "stupa", "viewpoint", "hike"],
+      "status": "open",
+      "sources": [
+        {
+          "source": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/search?query=World%20Peace%20Pagoda%20Pokhara",
+          "license": "ODbL",
+          "attribution": "(c) OpenStreetMap contributors"
+        },
+        {
+          "source": "Wikipedia",
+          "url": "https://en.wikipedia.org/w/index.php?search=World+Peace+Pagoda+Pokhara",
+          "license": "CC BY-SA 4.0",
+          "attribution": "Wikipedia contributors"
+        }
+      ]
+    },
+    {
+      "id": "janaki-mandir",
+      "nameEn": "Janaki Mandir",
+      "nameNe": "जानकी मन्दिर",
+      "placeType": "heritage",
+      "lat": 26.7286,
+      "lng": 85.9303,
+      "address": "Janakpur, Madhesh Province, Nepal",
+      "openingHours": "05:00-20:00 daily",
+      "priceLevel": 1,
+      "rating": 4.5,
+      "reviewCount": 2130,
+      "description": "A vast white marble temple dedicated to goddess Sita, blending Mughal and Rajput architecture in the heart of Janakpur. It is a major pilgrimage site for Hindus from Nepal and India.",
+      "tags": ["hindu", "temple", "pilgrimage", "mithila"],
+      "status": "open",
+      "sources": [
+        {
+          "source": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/search?query=Janaki%20Mandir%20Janakpur",
+          "license": "ODbL",
+          "attribution": "(c) OpenStreetMap contributors"
+        },
+        {
+          "source": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Janaki_Mandir",
+          "license": "CC BY-SA 4.0",
+          "attribution": "Wikipedia contributors"
+        }
+      ]
+    },
+    {
+      "id": "chitwan-national-park",
+      "nameEn": "Chitwan National Park",
+      "nameNe": "चितवन राष्ट्रिय निकुञ्ज",
+      "placeType": "park",
+      "lat": 27.5233,
+      "lng": 84.35,
+      "address": "Sauraha, Chitwan, Bagmati Province, Nepal",
+      "openingHours": "06:00-18:00 daily",
+      "priceLevel": 3,
+      "rating": 4.7,
+      "reviewCount": 4870,
+      "description": "Nepal's first national park and a UNESCO site protecting tall sal forest, grasslands and oxbow lakes. Jeep safaris and canoe trips look for one-horned rhino, gharial, wild elephant and the Bengal tiger.",
+      "tags": ["safari", "wildlife", "unesco", "rhino"],
+      "wikidataId": "Q206395",
+      "status": "open",
+      "sources": [
+        {
+          "source": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/search?query=Chitwan%20National%20Park",
+          "license": "ODbL",
+          "attribution": "(c) OpenStreetMap contributors"
+        },
+        {
+          "source": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Chitwan_National_Park",
+          "license": "CC BY-SA 4.0",
+          "attribution": "Wikipedia contributors"
+        }
+      ]
+    },
+    {
+      "id": "bardia-national-park",
+      "nameEn": "Bardia National Park",
+      "nameNe": "बर्दिया राष्ट्रिय निकुञ्ज",
+      "placeType": "park",
+      "lat": 28.3513,
+      "lng": 81.5046,
+      "address": "Thakurdwara, Bardia, Lumbini Province, Nepal",
+      "openingHours": "06:00-18:00 daily",
+      "priceLevel": 3,
+      "rating": 4.6,
+      "reviewCount": 1180,
+      "description": "The largest lowland park in Nepal's Terai, quieter than Chitwan and known for tiger sightings, wild elephant and gharial. Walking safaris and jungle camps keep the experience slow and close to the river.",
+      "tags": ["safari", "wildlife", "tiger", "jungle"],
+      "status": "open",
+      "sources": [
+        {
+          "source": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/search?query=Bardia%20National%20Park",
+          "license": "ODbL",
+          "attribution": "(c) OpenStreetMap contributors"
+        },
+        {
+          "source": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bardia_National_Park",
+          "license": "CC BY-SA 4.0",
+          "attribution": "Wikipedia contributors"
+        }
+      ]
+    },
+    {
+      "id": "sarangkot-viewpoint",
+      "nameEn": "Sarangkot Viewpoint",
+      "nameNe": "सरङ्कोट",
+      "placeType": "viewpoint",
+      "lat": 28.2096,
+      "lng": 83.9556,
+      "address": "Sarangkot, Pokhara, Gandaki Province, Nepal",
+      "openingHours": "05:00-18:00 daily",
+      "priceLevel": 1,
+      "rating": 4.7,
+      "reviewCount": 6740,
+      "description": "The classic sunrise spot above Pokhara, looking across the valley to Annapurna, Dhaulagiri and Machhapuchhre. Paragliders launch from the ridge just after first light.",
+      "tags": ["sunrise", "paragliding", "himalaya", "panorama"],
+      "status": "open",
+      "sources": [
+        {
+          "source": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/search?query=Sarangkot",
+          "license": "ODbL",
+          "attribution": "(c) OpenStreetMap contributors"
+        },
+        {
+          "source": "Wikipedia",
+          "url": "https://en.wikipedia.org/w/index.php?search=Sarangkot+Pokhara",
+          "license": "CC BY-SA 4.0",
+          "attribution": "Wikipedia contributors"
+        }
+      ]
+    },
+    {
+      "id": "nagarkot-viewpoint",
+      "nameEn": "Nagarkot Viewpoint",
+      "nameNe": "नगरकोट",
+      "placeType": "viewpoint",
+      "lat": 27.715,
+      "lng": 85.52,
+      "address": "Nagarkot, Bhaktapur, Bagmati Province, Nepal",
+      "openingHours": "05:00-19:00 daily",
+      "priceLevel": 1,
+      "rating": 4.4,
+      "reviewCount": 3410,
+      "description": "A hill resort east of Kathmandu with a long ridge view that runs from Dhaulagiri in the west to Kanchenjunga in the east on clear mornings. Popular for sunrise without a long drive.",
+      "tags": ["sunrise", "himalaya", "panorama", "weekend"],
+      "status": "open",
+      "sources": [
+        {
+          "source": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/search?query=Nagarkot",
+          "license": "ODbL",
+          "attribution": "(c) OpenStreetMap contributors"
+        },
+        {
+          "source": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nagarkot",
+          "license": "CC BY-SA 4.0",
+          "attribution": "Wikipedia contributors"
+        }
+      ]
+    },
+    {
+      "id": "gokyo-lakes",
+      "nameEn": "Gokyo Lakes",
+      "nameNe": "गोक्यो तालहरू",
+      "placeType": "viewpoint",
+      "lat": 27.9517,
+      "lng": 86.6917,
+      "address": "Gokyo, Solukhumbu, Koshi Province, Nepal",
+      "openingHours": "Open access",
+      "priceLevel": 2,
+      "rating": 4.8,
+      "reviewCount": 890,
+      "description": "A chain of turquoise glacial lakes at 4,700 m beneath the Ngozumpa Glacier, with Gokyo Ri rising behind the village. A quieter alternative to Everest Base Camp with enormous views.",
+      "tags": ["glacier lake", "everest", "trekking", "turquoise"],
+      "status": "open",
+      "sources": [
+        {
+          "source": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/search?query=Gokyo%20Lakes%20Nepal",
+          "license": "ODbL",
+          "attribution": "(c) OpenStreetMap contributors"
+        },
+        {
+          "source": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Gokyo_Lakes",
+          "license": "CC BY-SA 4.0",
+          "attribution": "Wikipedia contributors"
+        }
+      ]
+    },
+    {
+      "id": "phewa-lake",
+      "nameEn": "Phewa Lake",
+      "nameNe": "फेवा ताल",
+      "placeType": "attraction",
+      "lat": 28.213,
+      "lng": 83.951,
+      "address": "Lakeside, Pokhara 33700, Nepal",
+      "openingHours": "06:00-18:00 boat service",
+      "priceLevel": 1,
+      "rating": 4.6,
+      "reviewCount": 7520,
+      "description": "Pokhara's second largest lake, fringed by restaurants and forests with the Annapurna range reflected on calm mornings. Row boats and solar catamarans run to the Tal Barahi temple island.",
+      "tags": ["lake", "boating", "pokhara", "picnic"],
+      "status": "open",
+      "sources": [
+        {
+          "source": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/search?query=Phewa%20Lake%20Pokhara",
+          "license": "ODbL",
+          "attribution": "(c) OpenStreetMap contributors"
+        },
+        {
+          "source": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Phewa_Lake",
+          "license": "CC BY-SA 4.0",
+          "attribution": "Wikipedia contributors"
+        }
+      ]
+    },
+    {
+      "id": "thamel",
+      "nameEn": "Thamel",
+      "nameNe": "थमेल",
+      "placeType": "attraction",
+      "lat": 27.7153,
+      "lng": 85.3123,
+      "address": "Thamel, Kathmandu 44600, Nepal",
+      "openingHours": "Open access",
+      "priceLevel": 2,
+      "rating": 4.3,
+      "reviewCount": 15300,
+      "description": "Kathmandu's dense tourist quarter, full of trekking shops, bookstores, bakeries and live music. Narrow lanes stay busy from breakfast through late night.",
+      "tags": ["shopping", "nightlife", "cafes", "souvenirs"],
+      "status": "open",
+      "sources": [
+        {
+          "source": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/search?query=Thamel%20Kathmandu",
+          "license": "ODbL",
+          "attribution": "(c) OpenStreetMap contributors"
+        },
+        {
+          "source": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Thamel",
+          "license": "CC BY-SA 4.0",
+          "attribution": "Wikipedia contributors"
+        }
+      ]
+    },
+    {
+      "id": "himalaya-java-cafe",
+      "nameEn": "Himalaya Java Cafe",
+      "nameNe": null,
+      "placeType": "cafe",
+      "lat": 27.7144,
+      "lng": 85.3122,
+      "address": "Thamel Marg, Kathmandu, Nepal",
+      "openingHours": "07:00-22:00 daily",
+      "priceLevel": 1,
+      "rating": 4.5,
+      "reviewCount": 1620,
+      "description": "A reliable specialty coffee stop in Thamel with flat whites, toasties and fast wifi. A favoured laptop spot before the shops get busy.",
+      "tags": ["coffee", "wifi", "brunch", "work friendly"],
+      "status": "open",
+      "sources": [
+        {
+          "source": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/search?query=Himalaya%20Java%20Cafe%20Kathmandu",
+          "license": "ODbL",
+          "attribution": "(c) OpenStreetMap contributors"
+        }
+      ]
+    },
+    {
+      "id": "or2k-restaurant",
+      "nameEn": "OR2K",
+      "nameNe": null,
+      "placeType": "restaurant",
+      "lat": 27.7148,
+      "lng": 85.3116,
+      "address": "Chaksibari Marg, Thamel, Kathmandu, Nepal",
+      "openingHours": "11:00-23:00 daily",
+      "priceLevel": 2,
+      "rating": 4.6,
+      "reviewCount": 2740,
+      "description": "Floor-seating Israeli and Middle Eastern kitchen in Thamel, known for falafel platters, shakshuka and endless chai. Low tables, cushions and backpacker chatter.",
+      "tags": ["israeli", "vegetarian", "middle eastern", "floor seating"],
+      "status": "open",
+      "sources": [
+        {
+          "source": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/search?query=OR2K%20Thamel",
+          "license": "ODbL",
+          "attribution": "(c) OpenStreetMap contributors"
+        }
+      ]
+    },
+    {
+      "id": "thakali-kitchen",
+      "nameEn": "Thakali Kitchen",
+      "nameNe": "थकाली किचन",
+      "placeType": "restaurant",
+      "lat": 28.21,
+      "lng": 83.956,
+      "address": "Lakeside, Pokhara 33700, Nepal",
+      "openingHours": "07:00-22:00 daily",
+      "priceLevel": 2,
+      "rating": 4.5,
+      "reviewCount": 1980,
+      "description": "A Thakali set menu restaurant on Lakeside serving dal bhat, gundruk, dhindo and mountain-style curry with unlimited refills. Hearty, regional and good value.",
+      "tags": ["thakali", "dal bhat", "nepali", "lakeside"],
+      "status": "open",
+      "sources": [
+        {
+          "source": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/search?query=Thakali%20Kitchen%20Lakeside%20Pokhara",
+          "license": "ODbL",
+          "attribution": "(c) OpenStreetMap contributors"
+        }
+      ]
+    },
+    {
+      "id": "momo-stall-thamel",
+      "nameEn": "Street Momo Stall, Thamel",
+      "nameNe": "मःम स्टल",
+      "placeType": "street_food",
+      "lat": 27.7137,
+      "lng": 85.3127,
+      "address": "Opposite Hotel Manang, Thamel, Kathmandu, Nepal",
+      "openingHours": "10:00-21:00 daily",
+      "priceLevel": 1,
+      "rating": 4.4,
+      "reviewCount": 640,
+      "description": "A pavement steamer selling jhol and kothey momo to a queue of locals and trekkers. Ten pieces, hot tomato achar and no seating beyond the curb.",
+      "tags": ["momo", "dumplings", "street food", "quick bite"],
+      "status": "open",
+      "sources": [
+        {
+          "source": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/search?query=momo%20Thamel%20Kathmandu",
+          "license": "ODbL",
+          "attribution": "(c) OpenStreetMap contributors"
+        }
+      ]
+    },
+    {
+      "id": "hotel-yak-and-yeti",
+      "nameEn": "Hotel Yak & Yeti",
+      "nameNe": null,
+      "placeType": "lodging",
+      "lat": 27.7089,
+      "lng": 85.316,
+      "address": "Durbar Marg, Kathmandu 44600, Nepal",
+      "openingHours": "Reception 24h",
+      "priceLevel": 3,
+      "rating": 4.5,
+      "reviewCount": 3260,
+      "description": "A landmark five-star hotel in the centre of Kathmandu, built around the restored Lalit Durbar palace and gardens. Casino, spa, pool and several restaurants on site.",
+      "tags": ["hotel", "spa", "pool", "durbar marg"],
+      "status": "open",
+      "sources": [
+        {
+          "source": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/search?query=Hotel%20Yak%20and%20Yeti%20Kathmandu",
+          "license": "ODbL",
+          "attribution": "(c) OpenStreetMap contributors"
+        },
+        {
+          "source": "Wikipedia",
+          "url": "https://en.wikipedia.org/w/index.php?search=Hotel+Yak+and+Yeti",
+          "license": "CC BY-SA 4.0",
+          "attribution": "Wikipedia contributors"
+        }
+      ]
+    },
+    {
+      "id": "namche-bazaar-lodging",
+      "nameEn": "Namche Bazaar Lodges",
+      "nameNe": "नाम्चे बजार",
+      "placeType": "lodging",
+      "lat": 27.8063,
+      "lng": 86.7103,
+      "address": "Namche Bazaar, Solukhumbu, Koshi Province, Nepal",
+      "openingHours": "Reception 24h",
+      "priceLevel": 2,
+      "rating": 4.6,
+      "reviewCount": 1440,
+      "description": "The gateway town of the Everest region, a horseshoe of lodges, bakeries and gear shops at 3,440 m. Most trekkers spend two nights here to acclimatize before climbing higher.",
+      "tags": ["gateway to everest", "lodging", "bakery", "acclimatization"],
+      "status": "open",
+      "sources": [
+        {
+          "source": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/search?query=Namche%20Bazaar",
+          "license": "ODbL",
+          "attribution": "(c) OpenStreetMap contributors"
+        },
+        {
+          "source": "Wikipedia",
+          "url": "https://en.wikipedia.org/w/index.php?search=Namche+Bazaar",
+          "license": "CC BY-SA 4.0",
+          "attribution": "Wikipedia contributors"
+        }
+      ]
+    },
+    {
+      "id": "everest-view-hotel",
+      "nameEn": "Everest View Hotel",
+      "nameNe": null,
+      "placeType": "lodging",
+      "lat": 27.7683,
+      "lng": 86.714,
+      "address": "Syangboche, Solukhumbu, Koshi Province, Nepal",
+      "openingHours": "Reception 24h",
+      "priceLevel": 3,
+      "rating": 4.3,
+      "reviewCount": 520,
+      "description": "A high-altitude hotel on the Syangboche ridge above Namche, with a dining room that frames Everest, Lhotse and Ama Dablam. Visited as a day trip by helicopter or on foot.",
+      "tags": ["syangboche", "panorama", "luxury", "everest view"],
+      "status": "open",
+      "sources": [
+        {
+          "source": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/search?query=Everest%20View%20Hotel",
+          "license": "ODbL",
+          "attribution": "(c) OpenStreetMap contributors"
+        },
+        {
+          "source": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Everest_View_Hotel",
+          "license": "CC BY-SA 4.0",
+          "attribution": "Wikipedia contributors"
+        }
+      ]
+    },
+    {
+      "id": "yeti-homestay",
+      "nameEn": "Yeti Homestay",
+      "nameNe": "येती होमस्टे",
+      "placeType": "homestay",
+      "lat": 27.6715,
+      "lng": 85.4298,
+      "address": "Bhaktapur Old Town, Bhaktapur, Nepal",
+      "openingHours": "Check-in 12:00-20:00",
+      "priceLevel": 1,
+      "rating": 4.7,
+      "reviewCount": 210,
+      "description": "A family-run homestay in a restored Newari courtyard house, with home-cooked dal bhat and a short cooking class in the evening. Quiet lanes and pottery squares a few minutes' walk away.",
+      "tags": ["homestay", "newari family", "cooking class", "bhaktapur"],
+      "status": "open",
+      "sources": [
+        {
+          "source": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/search?query=homestay%20Bhaktapur",
+          "license": "ODbL",
+          "attribution": "(c) OpenStreetMap contributors"
+        }
+      ]
+    },
+    {
+      "id": "annapurna-base-camp-trailhead",
+      "nameEn": "Annapurna Base Camp Trailhead (Jhinu Danda)",
+      "nameNe": "झिनु डाँडा",
+      "placeType": "trailhead",
+      "lat": 28.5317,
+      "lng": 83.7934,
+      "address": "Jhinu Danda, Kaski, Gandaki Province, Nepal",
+      "openingHours": "Open access",
+      "priceLevel": 1,
+      "rating": 4.5,
+      "reviewCount": 380,
+      "description": "The road head where the ABC trail starts climbing from the Modi Khola, close to the Jhinu hot springs. Jeeps from Nayapul drop trekkers here before the stone staircases begin.",
+      "tags": ["trailhead", "jhinu danda", "hot springs", "annapurna"],
+      "status": "open",
+      "sources": [
+        {
+          "source": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/search?query=Jhinu%20Danda",
+          "license": "ODbL",
+          "attribution": "(c) OpenStreetMap contributors"
+        }
+      ]
+    }
+  ],
+  "total": 24,
+  "page": 1,
+  "pageSize": 24
+}

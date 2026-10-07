@@ -1,0 +1,83 @@
+http:
+  user_agent: "NepalVerseScraper/0.1 (+https://nepalverse.example; contact@example.com)"
+  timeout_s: 30.0
+  default_rate_limit_rps: 1.0
+
+paths:
+  raw_dir: raw
+  export_dir: ../web/public/data
+
+sources:
+  osm:
+    enabled: true
+    license: "ODbL-1.0"
+    attribution: "© OpenStreetMap contributors"
+    rate_limit_rps: 0.5
+    trust: 80
+    endpoints:
+      geofabrik: "https://download.geofabrik.de/asia/nepal/nepal-latest.osm.pbf"
+      overpass: "https://overpass-api.de/api/interpreter"
+
+  hotosm:
+    enabled: true
+    license: "ODbL-1.0"
+    attribution: "© OpenStreetMap contributors / HOTOSM"
+    rate_limit_rps: 0.5
+    trust: 75
+    endpoints:
+      hdx: "https://data.humdata.org/dataset/hotosm_nepal_poi"
+
+  wikivoyage:
+    enabled: true
+    license: "CC BY-SA 4.0"
+    attribution: "Wikivoyage contributors"
+    rate_limit_rps: 1.0
+    trust: 70
+    endpoints:
+      api: "https://en.wikivoyage.org/w/api.php"
+
+  wikidata:
+    enabled: true
+    license: "CC0 1.0"
+    attribution: "Wikidata contributors"
+    rate_limit_rps: 1.0
+    trust: 95
+    endpoints:
+      api: "https://www.wikidata.org/w/api.php"
+      sparql: "https://query.wikidata.org/sparql"
+
+  commons:
+    enabled: true
+    license: "CC BY-SA 4.0 / individual file licenses"
+    attribution: "Wikimedia Commons contributors"
+    rate_limit_rps: 1.0
+    trust: 60
+    endpoints:
+      api: "https://commons.wikimedia.org/w/api.php"
+
+  google_places:
+    enabled: false
+    license: "Google Maps Platform terms"
+    attribution: "Google Places"
+    rate_limit_rps: 1.0
+    trust: 90
+    endpoints:
+      places: "https://places.googleapis.com/v1/places:searchText"
+
+  foursquare:
+    enabled: false
+    license: "Foursquare terms"
+    attribution: "Foursquare"
+    rate_limit_rps: 1.0
+    trust: 85
+    endpoints:
+      explore: "https://api.foursquare.com/v3/places/search"
+
+  tripadvisor:
+    enabled: false
+    license: "TripAdvisor Terra terms"
+    attribution: "TripAdvisor"
+    rate_limit_rps: 0.5
+    trust: 85
+    endpoints:
+      locations: "https://api.unplugged.tools/tripadvisor/locations"

@@ -1,0 +1,52 @@
+[project]
+name = "nvs-scraper"
+version = "0.1.0"
+description = "NepalVerse scraper: country-wide Nepal places dataset pipeline"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic>=2",
+    "httpx>=0.27",
+    "typer>=0.12",
+    "tenacity>=8.2",
+    "rapidfuzz>=3.6",
+    "polars>=1.0",
+    "PyYAML>=6.0",
+    "indic-transliteration>=2.3",
+]
+
+# M2/M3 scope (kept out for fast installs):
+#   pyrosm, overpy            -> OSM PBF bulk seed + Overpass queries
+#   sqlalchemy, geoalchemy2, psycopg -> Postgres + PostGIS entity resolution (M3)
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+]
+
+[project.scripts]
+nvs = "nvs.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/nvs"]
+
+[tool.uv]
+default-groups = ["dev"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "UP", "B"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
